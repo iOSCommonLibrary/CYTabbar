@@ -10,7 +10,6 @@
 #import "CYButton.h"
 #import "CYCenterButton.h"
 #import "PlusAnimate.h"
-#define BARCOLOR(a,b,c,d) [UIColor colorWithRed:a/255.0 green:b/255.0 blue:c/255.0 alpha:d]
 
 @interface CustomTabBar ()
 /** selctButton */
@@ -21,6 +20,8 @@
 @property(assign , nonatomic,getter=is_bulge) BOOL bulge;
 /** tabBarController */
 @property (weak , nonatomic) UITabBarController *controller;
+/** border */
+@property (nonatomic,weak) CAShapeLayer *border;
 @end
 
 @implementation CustomTabBar
@@ -29,7 +30,8 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.btnArr = [NSMutableArray array];
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"CYTabBar.bundle/tab_background"]];
+        //Set backgroundColor color
+        self.backgroundColor = [UIColor whiteColor];
     }
     return self;
 }
@@ -80,12 +82,27 @@
         
         //Set title
         [btn setTitle:item.title forState:UIControlStateNormal];
-        [btn setTitleColor:BARCOLOR(113,109,104,1) forState:UIControlStateNormal];
-        [btn setTitleColor:BARCOLOR(113,109,104,1) forState:UIControlStateSelected];
+        [btn setTitleColor:[UIColor colorWithRed:113/255.0 green:109/255.0 blue:104/255.0 alpha:1] forState:UIControlStateNormal];
+        [btn setTitleColor:[UIColor colorWithRed:113/255.0 green:109/255.0 blue:104/255.0 alpha:1] forState:UIControlStateSelected];
         
         btn.tag = item.tag;
         [self addSubview:btn];
     }
+}
+
+/**
+ *  getter
+ */
+- (CAShapeLayer *)border{
+    if (!_border) {
+        CAShapeLayer *border = [CAShapeLayer layer];
+        border.fillColor = [UIColor colorWithRed:240/255.0 green:240/255.0 blue:240/255.0 alpha:1].CGColor;
+        border.path = [UIBezierPath bezierPathWithRect:
+                       CGRectMake(0,0,self.bounds.size.width,0.5)].CGPath;
+        [self.layer insertSublayer:border atIndex:0];
+        _border = border;
+    }
+    return _border;
 }
 
 
@@ -118,6 +135,7 @@
         }
         rect.origin.x += rect.size.width;
     }
+    self.border.path = [UIBezierPath bezierPathWithRect:CGRectMake(0,0,self.bounds.size.width,1)].CGPath;
 }
 
 /**
@@ -191,7 +209,7 @@
  *  Center button click
  */
 - (void)centerBtnClick:(CYCenterButton *)button{
-    NSLog(@"centerBtnClick");
+    NSLog(@"CustomTabBar.m  141行 CenterBtnClick");
     [PlusAnimate standardPublishAnimateWithView:button];
 }
 
@@ -211,13 +229,18 @@
  *  Remove observer
  */
 - (void)dealloc{
-    for (int i=0; i<self.items.count; i++) {
-        [self.items[i] removeObserver:self
-                           forKeyPath:@"badgeValue"
-                              context:(__bridge void * _Nullable)(self.btnArr[i])];
-        [self.items[i] removeObserver:self
-                           forKeyPath:@"badgeColor"
-                              context:(__bridge void * _Nullable)(self.btnArr[i])];
+    for (int i=0; i<self.btnArr.count; i++) {
+        int index = ({
+            int n = 0;
+            if (-1 != _centerPlace)
+                n = _centerPlace > i ? 0 : 1;
+            i+n;});
+        [self.items[index] removeObserver:self
+                               forKeyPath:@"badgeValue"
+                                  context:(__bridge void * _Nullable)(self.btnArr[i])];
+        [self.items[index] removeObserver:self
+                               forKeyPath:@"badgeColor"
+                                  context:(__bridge void * _Nullable)(self.btnArr[i])];
     }
 }
 

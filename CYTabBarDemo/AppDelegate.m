@@ -19,14 +19,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    CGRect rect = [[UIScreen mainScreen]bounds];
-    self.window = [[UIWindow alloc]initWithFrame:rect];
+    self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     CYTabBarController * tabbar = [[CYTabBarController alloc]init];
     [tabbar addChildController:[ViewController new] title:@"发现" imageName:@"Btn01" selectedImageName:@"SelectBtn01"];
     [tabbar addChildController:[ViewController2 new] title:@"我的" imageName:@"Btn02" selectedImageName:@"SelectBtn02"];
     [tabbar addCenterController:nil bulge:YES title:@"选课" imageName:@"post_normal" selectedImageName:@"bc"];
-    
-    
     self.window.rootViewController = tabbar;
     [self.window makeKeyAndVisible];
     return YES;
