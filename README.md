@@ -3,7 +3,7 @@
              )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-ObjC-brightgreen.svg?style=flat)](https://developer.apple.com/Objective-C)
 </br>
-![(show)](http://github.com/zhangchunyu2016/CYTabbar/CYTabBarDemo/show.png)
+![show.png](http://upload-images.jianshu.io/upload_images/2028853-71816e3e435ea4b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 一.  功能简介 - Introduction
 
 - [x] 中间按钮可凸出 （bulge设为YES 否则不突出）
