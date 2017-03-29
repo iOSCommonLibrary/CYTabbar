@@ -3,8 +3,7 @@
              )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-ObjC-brightgreen.svg?style=flat)](https://developer.apple.com/Objective-C)
 </br>
-![(show)](http://github.com/zhangchunyu2016/CYTabBarDemo/show.png)
-
+![(show)](http://github.com/zhangchunyu2016/CYTabbar/CYTabBarDemo/show.png)
 ## 一.  功能简介 - Introduction
 
 - [x] 中间按钮可凸出 （bulge设为YES 否则不突出）
@@ -37,7 +36,7 @@ self.window.rootViewController = tabbar;
 [self.window makeKeyAndVisible];
 return YES;
 }
-``
+```
 
 ## 三.  要求 - Requirements
 
