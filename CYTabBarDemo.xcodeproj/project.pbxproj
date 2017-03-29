@@ -14,6 +14,7 @@
 		24225AEB1E75A7FC00B242A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24225AE91E75A7FC00B242A7 /* LaunchScreen.storyboard */; };
 		24225B091E75A80500B242A7 /* PlusAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24225B011E75A80500B242A7 /* PlusAnimate.m */; };
 		24225B0D1E75A86F00B242A7 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24225B0B1E75A86F00B242A7 /* ViewController2.m */; };
+		2440AC6B1E8BA98F005FE3B2 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = 2440AC6A1E8BA98F005FE3B2 /* show.png */; };
 		24E92FFD1E7AAA87001EF71B /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF31E7AAA87001EF71B /* CustomTabBar.m */; };
 		24E92FFE1E7AAA87001EF71B /* CYBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF51E7AAA87001EF71B /* CYBadgeView.m */; };
 		24E92FFF1E7AAA87001EF71B /* CYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF71E7AAA87001EF71B /* CYButton.m */; };
@@ -36,6 +37,7 @@
 		24225B011E75A80500B242A7 /* PlusAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusAnimate.m; sourceTree = "<group>"; };
 		24225B0A1E75A86F00B242A7 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		24225B0B1E75A86F00B242A7 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
+		2440AC6A1E8BA98F005FE3B2 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 		24E92FF21E7AAA87001EF71B /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
 		24E92FF31E7AAA87001EF71B /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		24E92FF41E7AAA87001EF71B /* CYBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBadgeView.h; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				24225AE71E75A7FC00B242A7 /* Assets.xcassets */,
 				24225AE91E75A7FC00B242A7 /* LaunchScreen.storyboard */,
 				24225AEC1E75A7FC00B242A7 /* Info.plist */,
+				2440AC6A1E8BA98F005FE3B2 /* show.png */,
 				24225ADB1E75A7FC00B242A7 /* Supporting Files */,
 			);
 			path = CYTabBarDemo;
@@ -189,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2440AC6B1E8BA98F005FE3B2 /* show.png in Resources */,
 				24225AEB1E75A7FC00B242A7 /* LaunchScreen.storyboard in Resources */,
 				24E930011E7AAA87001EF71B /* CYTabBar.bundle in Resources */,
 				24225AE81E75A7FC00B242A7 /* Assets.xcassets in Resources */,

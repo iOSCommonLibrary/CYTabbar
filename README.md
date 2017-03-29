@@ -2,7 +2,8 @@
 [![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
              )](https://developer.apple.com/iphone/index.action)
 [![Language](http://img.shields.io/badge/language-ObjC-brightgreen.svg?style=flat)](https://developer.apple.com/Objective-C)
-<img src="http://wx1.sinaimg.cn/mw690/ade10dedgy1fdgf4qs610j20ku112n31.jpg" width="270" height="480"> 
+</br>
+![(show)](http://github.com/zhangchunyu2016/CYTabBarDemo/show.png)
 
 ## 一.  功能简介 - Introduction
 
@@ -13,7 +14,7 @@
 - [x] 数字提醒用户(当前控制器.tabBarItem.badgeValue = @"100";)
 - [x] 改变数字提醒背景颜色(当前控制器.tabBarItem.badgeColor = [UIColor xxxColor];)
 - [x] 切换控制器 (当前tabBarController.selectedIndex = x(索引为添加控制器时的顺序);)
-![(show)](http://github.com/zhangchunyu2016/CYTabBarDemo/show.png)
+
 ## 二.  安装 - Installation
 
 - 暂不支持CocoaPods
