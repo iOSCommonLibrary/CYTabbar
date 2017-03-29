@@ -4,8 +4,7 @@
 [![Language](http://img.shields.io/badge/language-ObjC-brightgreen.svg?style=flat)](https://developer.apple.com/Objective-C)
 </br>
 ![](http://upload-images.jianshu.io/upload_images/2028853-71816e3e435ea4b3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![](http://upload-images.jianshu.io/upload_images/2028853-3ad54ef949ad7cbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![Demo截图](http://upload-images.jianshu.io/upload_images/2028853-60b10df25b88d217.gif?imageMogr2/auto-orient/strip)
+![](http://upload-images.jianshu.io/upload_images/2028853-3ad54ef949ad7cbe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/320)
 
 ## 一.  功能简介 - Introduction
 
