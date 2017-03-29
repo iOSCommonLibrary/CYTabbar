@@ -14,8 +14,6 @@
 		24225AEB1E75A7FC00B242A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24225AE91E75A7FC00B242A7 /* LaunchScreen.storyboard */; };
 		24225B091E75A80500B242A7 /* PlusAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24225B011E75A80500B242A7 /* PlusAnimate.m */; };
 		24225B0D1E75A86F00B242A7 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 24225B0B1E75A86F00B242A7 /* ViewController2.m */; };
-		24225B111E75AF2F00B242A7 /* IMG_1101.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 24225B0F1E75AF2F00B242A7 /* IMG_1101.PNG */; };
-		24225B121E75AF2F00B242A7 /* IMG_1100.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 24225B101E75AF2F00B242A7 /* IMG_1100.PNG */; };
 		24E92FFD1E7AAA87001EF71B /* CustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF31E7AAA87001EF71B /* CustomTabBar.m */; };
 		24E92FFE1E7AAA87001EF71B /* CYBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF51E7AAA87001EF71B /* CYBadgeView.m */; };
 		24E92FFF1E7AAA87001EF71B /* CYButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 24E92FF71E7AAA87001EF71B /* CYButton.m */; };
@@ -38,8 +36,6 @@
 		24225B011E75A80500B242A7 /* PlusAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlusAnimate.m; sourceTree = "<group>"; };
 		24225B0A1E75A86F00B242A7 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		24225B0B1E75A86F00B242A7 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		24225B0F1E75AF2F00B242A7 /* IMG_1101.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1101.PNG; sourceTree = "<group>"; };
-		24225B101E75AF2F00B242A7 /* IMG_1100.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_1100.PNG; sourceTree = "<group>"; };
 		24E92FF21E7AAA87001EF71B /* CustomTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBar.h; sourceTree = "<group>"; };
 		24E92FF31E7AAA87001EF71B /* CustomTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBar.m; sourceTree = "<group>"; };
 		24E92FF41E7AAA87001EF71B /* CYBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYBadgeView.h; sourceTree = "<group>"; };
@@ -91,8 +87,6 @@
 				24225AE21E75A7FC00B242A7 /* ViewController.m */,
 				24225B0A1E75A86F00B242A7 /* ViewController2.h */,
 				24225B0B1E75A86F00B242A7 /* ViewController2.m */,
-				24225B0F1E75AF2F00B242A7 /* IMG_1101.PNG */,
-				24225B101E75AF2F00B242A7 /* IMG_1100.PNG */,
 				24225AE71E75A7FC00B242A7 /* Assets.xcassets */,
 				24225AE91E75A7FC00B242A7 /* LaunchScreen.storyboard */,
 				24225AEC1E75A7FC00B242A7 /* Info.plist */,
@@ -197,9 +191,7 @@
 			files = (
 				24225AEB1E75A7FC00B242A7 /* LaunchScreen.storyboard in Resources */,
 				24E930011E7AAA87001EF71B /* CYTabBar.bundle in Resources */,
-				24225B121E75AF2F00B242A7 /* IMG_1100.PNG in Resources */,
 				24225AE81E75A7FC00B242A7 /* Assets.xcassets in Resources */,
-				24225B111E75AF2F00B242A7 /* IMG_1101.PNG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,7 +320,6 @@
 		24225AF01E75A7FC00B242A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R77KAS4JTD;
 				INFOPLIST_FILE = CYTabBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -340,7 +331,6 @@
 		24225AF11E75A7FC00B242A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = R77KAS4JTD;
 				INFOPLIST_FILE = CYTabBarDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

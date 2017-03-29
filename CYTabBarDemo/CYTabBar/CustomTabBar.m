@@ -209,7 +209,7 @@
  *  Center button click
  */
 - (void)centerBtnClick:(CYCenterButton *)button{
-    NSLog(@"CustomTabBar.m  141行 CenterBtnClick");
+    NSLog(@"CustomTabBar.m  141行 CenterBtnClick , 可以在这里设置你想要的动画");
     [PlusAnimate standardPublishAnimateWithView:button];
 }
 

@@ -16,21 +16,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImageView *img = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    img.image = [UIImage imageNamed:@"IMG_1100"];
-    img.contentMode =  UIViewContentModeScaleAspectFill;
-    img.clipsToBounds = YES;
-    [self.view addSubview:img];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    self.navigationItem.title = self.tabBarItem.title;
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor blackColor]}];
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    UIButton *btn  = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
+    btn.backgroundColor = [UIColor colorWithRed:86/255.0 green:149/255.0 blue:216/255.0 alpha:1];
+    btn.center = self.view.center;
+    [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:btn];
 }
 
+- (void)btnClick{
+    UIViewController *vc = [UIViewController new];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
 @end

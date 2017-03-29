@@ -16,21 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    UIImageView *img = [[UIImageView alloc]initWithFrame:self.view.bounds];
-    img.image = [UIImage imageNamed:@"IMG_1101"];
-    img.contentMode =  UIViewContentModeScaleAspectFill;
-    img.clipsToBounds = YES;
-    [self.view addSubview:img];
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)prefersStatusBarHidden
-{
-    return YES;
-}
 
 @end

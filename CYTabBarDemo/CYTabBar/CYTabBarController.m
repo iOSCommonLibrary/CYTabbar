@@ -79,7 +79,7 @@
  *  getter
  */
 - (CustomTabBar *)tabbar{
-    if (!_tabbar) {
+    if (!_tabbar && self.items.count) {
         _tabbar = [[CustomTabBar alloc]initWithFrame:self.tabBar.frame];
         [_tabbar setValue:[NSNumber numberWithBool:self.bulge] forKey:@"bulge"];
         [_tabbar setValue:self forKey:@"controller"];
